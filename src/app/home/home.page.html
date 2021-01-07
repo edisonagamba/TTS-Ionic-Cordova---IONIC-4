@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Text to Speech
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h2 class="">Plugin de Cordova</h2>
+    <p>
+      Como usar el plugin de cordova de texto a sonido
+      <i class="ingles">text to speech</i>
+    </p>
+    <img class="animated fadeIn" src="assets/imagen.png" alt="" />
+    <br />
+    <ion-button
+      (click)="hablar('Este es el texto que quiero oír en español');"
+      class="animated slideInRight"
+      color="success"
+      expand="block"
+      >TTS - Español</ion-button
+    >
+    <br />
+    <ion-button
+      (click)="speak('This is the text that I want to hear');"
+      class="animated slideInLeft"
+      color="primary"
+      expand="block"
+    >TTS - English
+    </ion-button>
+  </div>
+</ion-content>
